@@ -4,6 +4,12 @@
 
 Flutter-приложение для управления заметками с использованием Supabase в качестве backend.
 
+## 📱 Скриншоты приложения
+
+| Вход | Главный экран | Создание | Изменение |
+|------|---------------|----------|-----------|
+| <img src="https://github.com/user-attachments/assets/9b68ea78-c36e-42f1-90ca-d82a09c43b41" width="150" /> | <img src="https://github.com/user-attachments/assets/f312d009-0198-4136-9a73-0ad6180faf14" width="150" /> | <img src="https://github.com/user-attachments/assets/6aa6c02a-3ad6-4d7a-8ecb-e8b46b9fcfd8" width="150" /> | <img src="https://github.com/user-attachments/assets/f41c3975-d48e-4ec0-823b-c35b161895bb" width="150" /> |
+
 ## 📋 Функциональности
 
 - ✅ Аутентификация по email и паролю
@@ -17,12 +23,6 @@ Flutter-приложение для управления заметками с �
 - **Flutter** - кроссплатформенный UI фреймворк
 - **Supabase** - Backend-as-a-Service (PostgreSQL + Auth + Realtime)
 - **Dart** - язык программирования
-
-## Внешний вид
-| Вход |  Главный экран | Создание | Изменение |
-|---------------|-----------|---------|-------|-----------------|
-| <img width="150" alt="image" src="https://github.com/user-attachments/assets/9b68ea78-c36e-42f1-90ca-d82a09c43b41" /> | <img width="150" alt="image" src="https://github.com/user-attachments/assets/f312d009-0198-4136-9a73-0ad6180faf14" /> | <img width="150"  alt="image" src="https://github.com/user-attachments/assets/6aa6c02a-3ad6-4d7a-8ecb-e8b46b9fcfd8" /> | <img width="150" alt="image" src="https://github.com/user-attachments/assets/f41c3975-d48e-4ec0-823b-c35b161895bb" />
- |
 
 ## 📱 Использование
 Регистрация/Вход - введите email и пароль
