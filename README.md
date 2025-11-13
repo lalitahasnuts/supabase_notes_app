@@ -1,5 +1,3 @@
-# supabase_notes_app
-
 # Supabase Notes App
 
 Flutter-приложение для управления заметками с использованием Supabase в качестве backend.
