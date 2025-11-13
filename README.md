@@ -1,16 +1,61 @@
 # supabase_notes_app
 
-A new Flutter project.
+# Supabase Notes App
 
-## Getting Started
+Flutter-приложение для управления заметками с использованием Supabase в качестве backend.
 
-This project is a starting point for a Flutter application.
+## 📋 Функциональности
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Аутентификация по email и паролю
+- ✅ Создание, чтение, обновление и удаление заметок (CRUD)
+- ✅ Realtime-обновления через Supabase
+- ✅ Row Level Security (RLS) для защиты данных
+- ✅ Интерфейс на русском языке
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠 Технологии
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter** - кроссплатформенный UI фреймворк
+- **Supabase** - Backend-as-a-Service (PostgreSQL + Auth + Realtime)
+- **Dart** - язык программирования
+
+## Внешний вид
+| Вход |  Главный экран | Создание | Изменение |
+|---------------|-----------|---------|-------|-----------------|
+| <img width="150" alt="image" src="https://github.com/user-attachments/assets/9b68ea78-c36e-42f1-90ca-d82a09c43b41" /> | <img width="150" alt="image" src="https://github.com/user-attachments/assets/f312d009-0198-4136-9a73-0ad6180faf14" /> | <img width="150"  alt="image" src="https://github.com/user-attachments/assets/6aa6c02a-3ad6-4d7a-8ecb-e8b46b9fcfd8" /> | <img width="150" alt="image" src="https://github.com/user-attachments/assets/f41c3975-d48e-4ec0-823b-c35b161895bb" />
+ |
+
+## 📱 Использование
+Регистрация/Вход - введите email и пароль
+
+Создание заметки - нажмите "+" и заполните форму
+
+Редактирование - нажмите на существующую заметку
+
+Удаление - свайп влево или кнопка удаления
+
+Выход - кнопка в правом верхнем углу
+
+## 🔒 Безопасность
+Row Level Security (RLS) - каждая заметка привязана к пользователю
+
+JWT токены - автоматическое обновление сессий
+
+Валидация данных - на уровне базы и приложения
+
+## 🐛 Решение проблем
+Ошибка "Permission denied"
+Проверьте, что пользователь аутентифицирован
+
+Убедитесь, что RLS политики настроены правильно
+
+Проверьте, что user_id передается корректно
+
+Realtime не работает
+Убедитесь, что указан primaryKey: ['id'] в stream()
+
+Проверьте наличие политики SELECT для RLS
+
+Ошибки инициализации
+Проверьте корректность URL и anon key
+
+Убедитесь, что Supabase.initialize() вызывается до runApp()
